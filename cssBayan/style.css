@@ -1,7 +1,6 @@
-body,
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
     background: #178fb4;
@@ -12,26 +11,28 @@ h1 {
 }
 
 .wrapper {
-    max-width: 30vw;
-    margin: auto;
-    height: 100%;
+    width: calc(100vw - 1em);
+    margin: 2em auto;    
     text-align: center;
+    overflow: hidden;
 }
 .img-meme {
     max-height: 50vh;
-    max-width: 90%;
+    max-width: 70%;
 }
 .accordion {
     margin: auto;
-    max-width: 90%;
+    max-width: 80%;
     text-align: center;
     /* box-shadow: 0 1em 0 0 #5fdacf inset; */
     background: #291c40;
     padding: 1em;
 }
 .accordion-item {
-    position: relative;
-    margin-bottom: 0.4em;
+    /* position: relative; */
+    flex-direction: column;
+    /* margin-bottom: 0.4em; */
+    display: flex;
 }
 .accordion-item__input {
     position: absolute;
@@ -70,19 +71,6 @@ h1 {
     max-height: 100%;
 }
 
-/* .icon {
-    display: inline-block;
-    background-image: url('img/accordion.png');
-    width: 1.5em;
-    height: 1.5em;
-    opacity: 1;
-    background-size: 1em;
-}
-
-.icon img {
-    max-width: 100%;
-} */
-
 .icon-holder img {
     width: 1em;
     opacity: 1;
@@ -90,3 +78,20 @@ h1 {
     vertical-align: middle;    
 }
 
+@media (min-width: 820px) {
+    .wrapper {
+        width: 70%;
+    }
+    
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        width: 30%;
+    }
+    
+}
+
+@media (hover:hover) {
+    
+}

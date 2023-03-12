@@ -23,9 +23,9 @@ h1 {
 }
 .accordion {
     margin: auto;
-    max-width: 70%;
+    max-width: 90%;
     text-align: center;
-    box-shadow: 10 10px 0 0 #5fdacf inset;
+    /* box-shadow: 0 1em 0 0 #5fdacf inset; */
     background: #291c40;
     padding: 1em;
 }
@@ -40,11 +40,14 @@ h1 {
     opacity: 0;
 }
 .accordion-item__header {
-    display: block;
+    display: flex;
     padding: 0.5em;
     border: 0.1em solid #00f05c;
     font-size: 1.5em;
     color: #5fdacf;
+    text-align: left;
+    cursor: pointer;
+    justify-content: space-between;
 }
 .accordion-item__content {
     padding: 0.5em;
@@ -67,5 +70,23 @@ h1 {
     max-height: 100%;
 }
 
+/* .icon {
+    display: inline-block;
+    background-image: url('img/accordion.png');
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 1;
+    background-size: 1em;
+}
 
+.icon img {
+    max-width: 100%;
+} */
+
+.icon-holder img {
+    width: 1em;
+    opacity: 1;
+    display: inline-block;
+    vertical-align: middle;    
+}
 

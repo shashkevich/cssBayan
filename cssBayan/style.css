@@ -4,12 +4,62 @@ html {
 }
 
 body {
-    background: #330d28;
+    background: #178fb4;
 }
 
-.wrapper {}
-.accordion {}
-.accordion-item {}
-.accordion-item__input {}
-.accordion-item__header {}
-.accordion-item__content {}
+h1 {
+    color: #00f05c;
+}
+
+.wrapper {
+    max-width: 30vw;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+}
+.accordion {
+    margin: auto;
+    max-width: 70%;
+    text-align: center;
+    box-shadow: 10 10px 0 0 #5fdacf inset;
+    background: #291c40;
+    padding: 1em;
+}
+.accordion-item {
+    position: relative;
+    margin-bottom: 0.4em;
+}
+.accordion-item__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.accordion-item__header {
+    display: block;
+    padding: 0.5em;
+    border: 0.1em solid #00f05c;
+    font-size: 1.5em;
+    color: #5fdacf;
+}
+.accordion-item__content {
+    padding: 0.5em;
+    border: 0.1em solid #00f05c;
+    border-top: none;
+    opacity: 0;
+    max-height: 0;
+}
+.accordion-item__input:hover ~ .accordion-item__header {
+    
+}
+.accordion-item__input:hover ~ .accordion-item__content {
+    transition: all 1s ease-in;
+    opacity: 1;
+    max-height: 100%;
+}
+
+.img-meme {
+    max-height: 50vh;
+    max-width: 90%;
+}
+

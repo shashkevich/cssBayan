@@ -44,7 +44,7 @@ h1 {
     display: flex;
     padding: 0.5em;
     border: 0.1em solid #00f05c;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #5fdacf;
     text-align: left;
     cursor: pointer;
@@ -82,16 +82,23 @@ h1 {
     .wrapper {
         width: 70%;
     }
-    
+    .accordion-item__header {    
+    font-size: 1.4em;       
+    cursor:auto;    
+}
 }
 
 @media (min-width: 1920px) {
     .wrapper {
         width: 30%;
     }
+    .accordion-item__header {    
+    font-size: 1.5em;       
+    cursor:auto; 
     
+}
 }
 
 @media (hover:hover) {
-    
+   
 }

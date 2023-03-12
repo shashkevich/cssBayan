@@ -1,0 +1,15 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background: #330d28;
+}
+
+.wrapper {}
+.accordion {}
+.accordion-item {}
+.accordion-item__input {}
+.accordion-item__header {}
+.accordion-item__content {}

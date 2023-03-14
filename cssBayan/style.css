@@ -91,24 +91,25 @@ h1 {
     }
 }
 
-/* @media (min-width: 820px) {
-    .wrapper {
-        width: 70%;
-    }
-    .accordion-item__header {    
-        font-size: 1.4rem;       
-        cursor:auto;    
-}
-}
-
-@media (min-width: 1920px) {
+@media (max-width: 1180px) {
     .wrapper {
         width: 30%;
     }
     .accordion-item__header {    
         font-size: 1.5em;       
         cursor:auto;    
+    }
 }
 
-} */
+@media (max-width: 850px) {
+    .wrapper {
+        width: 90%;
+    }
+    .accordion-item__header {    
+        font-size: 1.4rem;       
+        cursor:auto;    
+    }
+}
+
+
 

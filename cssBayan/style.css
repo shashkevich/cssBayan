@@ -1,0 +1,121 @@
+html {
+    width: 100vw;
+}
+
+body {
+    background: darkcyan;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h1 {
+    color: #291c40;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    width: 40%;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+.img-meme {
+    height: 0;
+    width: auto;
+    object-fit: contain;
+    transition: all 1s ease-in;
+}
+.accordion {
+    color: aliceblue; /*#5fdacf;*/
+    background: midnightblue;
+    cursor: pointer;
+}
+.accordion-item {
+    width: auto;
+    border-bottom: 0.05rem solid #00f05c; /*0.1em solid #00f05c;*/
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 1rem;
+}
+.accordion-item__input {
+    visibility: hidden;
+}
+.accordion-item__header {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;   
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-img {
+    width: 1rem;
+    transition: all 1s ease-in;
+    vertical-align: middle;
+}
+/* .accordion-item__content {
+    padding: 0.5em;
+    border: 0.1em solid #00f05c;
+    border-top: none;
+    opacity: 0;
+    max-height: 0;
+} */
+
+
+.accordion-item__input:checked ~ label .img-meme {
+    height: 30vh;
+    width: auto;
+}
+
+.accordion-item__input:checked ~ label .icon-holder img {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(-360deg);
+}
+
+@media screen and (hover:hover) {
+    .accordion-item:hover .img-meme {
+        height: 30vh;
+        width: auto;
+    }
+
+    .accordion-item:active .img-meme {
+        height: 20vh;
+        opacity: 0.5;        
+    }
+
+    .accordion-item:hover {
+        color:darkturquoise;
+    }
+    .accordion-item:hover .icon-holder img {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1180px) {
+    .wrapper {
+        width: 30%;
+    }
+    .accordion-item__header {    
+        font-size: 1.5em;       
+        cursor:auto;    
+    }
+}
+
+@media (max-width: 850px) {
+    .wrapper {
+        width: 90%;
+    }
+    .accordion-item__header {    
+        font-size: 1.4rem;       
+        cursor:auto;    
+    }
+}
+
+
+

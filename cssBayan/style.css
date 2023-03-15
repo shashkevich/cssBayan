@@ -38,10 +38,7 @@ h1 {
     padding: 1rem;
 }
 .accordion-item__input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
+    visibility: hidden;
 }
 .accordion-item__header {
     display: flex;
@@ -84,6 +81,15 @@ h1 {
     .accordion-item:hover .img-meme {
         height: 30vh;
         width: auto;
+    }
+
+    .accordion-item:active .img-meme {
+        height: 20vh;
+        opacity: 0.5;        
+    }
+
+    .accordion-item:hover {
+        color:darkturquoise;
     }
     .accordion-item:hover .icon-holder img {
         -webkit-transform: rotate(360deg);
